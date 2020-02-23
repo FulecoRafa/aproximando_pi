@@ -5,7 +5,7 @@ let total = 0;
 let pie = document.getElementById('pi');
 
 function setup(){
-    createCanvas(810, 810);
+    createCanvas(810, 810).parent('canvas');
     background(0);
     noFill();
     stroke(255);
@@ -22,7 +22,7 @@ function draw(){
     for( let i = 0 ; i<1000 ; i++){
         let dist2 = x*x+y*y
 
-        if(dist2 < 400*400){
+        if(dist2 < 401*401){
             stroke(100, 255, 0);
             count++;
         }else{

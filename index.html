@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: large;
+        }
+        img{
+            background-color: white;
+            color: black;
+            width: 30em;
+            padding: 1em;
+        }
+    </style>
     <head>
         <title>Aproximando PI</title>
         <meta charset="utf-8">
     </head>
     <body>
+        <h1>Valor real de PI:</h1>
+        <h2>3.1415926535897932</h2>
         <h1>Aproximando PI</h1>
         <h2 id="pi"></h2>
+        <div id="canvas"></div>
+        <h3>Esta aproximação de pi se baseia em um método estatístico para cálculo de seu valor. 
+        <br>Considere que um pessoa joga dardos neste alvo, quala probabilidade deste dardo acertar o círculo?
+        <br>Calculamos essa probabilidade pela razão das áreas. Considerando que nenhum dardo atinja fora do quadrado:
+        </h3>
+        <img src="./CodeCogsEqn.gif" alt="Not Found...">
+        <h3>Onde B é o total da dardos que atingiram o círculo e T o total de dardos.
+        <br>Se fizermos isso para todos os pontos existentes, teremos uma boa aproximação.
+        </h3>
     </body>
     <script src="./p5.js"></script>
     <script src="./index.js"></script>
