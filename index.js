@@ -17,16 +17,15 @@ function setup(){
 
 function draw(){
     translate(405, 405);
-    
 
     for( let i = 0 ; i<1000 ; i++){
         let dist2 = x*x+y*y
 
         if(dist2 < 401*401){
-            stroke(100, 255, 0);
+            stroke('rgba(100, 255, 0, 0.65)');
             count++;
         }else{
-            stroke(255, 100, 0);
+            stroke('rgba(255, 100, 0, 0.65)');
         }
         point(x, y);
         total++;
